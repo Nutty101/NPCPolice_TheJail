@@ -1,0 +1,159 @@
+﻿languageupdated: "2019-05-26"
+general_messages:
+  commands_invalidarguments: "[{\"text\":\"Invalid arguments for the command \",\"color\":\"RED\"},<message>]"
+  no_permissions: "[{\"text\":\"[\",\"color\":\"yellow\"},{\"text\":\"TheJail\",\"color\":\"green\"},{\"text\":\"] \",\"color\":\"yellow\"},{\"text\":\"No permissions\"}]"
+  invalid_command:  "[{\"text\":\"[\",\"color\":\"yellow\"},{\"text\":\"TheJail\",\"color\":\"green\"},{\"text\":\"] \",\"color\":\"yellow\"},{\"text\":\"Invalid command\"}]"
+  invalid_npcpolice:  "[{\"text\":\"[\",\"color\":\"yellow\"},{\"text\":\"TheJail\",\"color\":\"green\"},{\"text\":\"] \",\"color\":\"yellow\"},{\"text\":\"Plugin Disabled, you need NPCPolice for this plugin to work.\"}]"
+  invalid_npc:  "[{\"text\":\"[\",\"color\":\"yellow\"},{\"text\":\"TheJail\",\"color\":\"green\"},{\"text\":\"] \",\"color\":\"yellow\"},{\"text\":\"You must have a NPC selected to use this command or add --npc # anywhere in your command.\"}]"
+  npc_permission: "[{\"text\":\"[\",\"color\":\"yellow\"},{\"text\":\"TheJail\",\"color\":\"green\"},{\"text\":\"] \",\"color\":\"yellow\"},{\"text\":\"You do not have permissions to this NPC\"}]"
+  config_location_set: "[{\"text\":\"&2[&eTheJail&2] &6The <message> location is now set.\",\"color\":\"red\"}]"
+  config_location_clear: "[{\"text\":\"&2[&eTheJail&2] &6The <message> location has been cleared.\",\"color\":\"red\"}]"
+  config_server_set: "[{\"text\":\"&2[&eTheJail&2] &6The <message> server is now set.\",\"color\":\"red\"}]"
+  config_server_clear: "[{\"text\":\"&2[&eTheJail&2] &6The <message> server has been cleared.\",\"color\":\"red\"}]"
+  config_setup: "[{\"text\":\"&2[&eTheJail&2] &6Configuration Validation.\",\"color\":\"red\"}]"
+  config_items: "[{\"text\":\"&2[&eTheJail&2] &6Items Updated.\",\"color\":\"red\"}]"
+
+command_jsonhelp:
+  command_help_group: "[{\"text\":\"--\",\"color\":\"dark_aqua\"},{\"text\":\"[\",\"color\":\"white\"},{\"text\":\"<message>\",\"color\":\"yellow\"},{\"text\":\"]\",\"color\":\"white\"},{\"text\":\"-----------------------------\",\"color\":\"dark_aqua\"}]"
+  command_reload_help: "{\"text\":\"<commandname>\",\"color\":\"green\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail <commandname>\n&eDescription&2:\n  &fReloads the the global, world, and jail\n&f configurations, as well as languages.\n&ePermission&2:\n  &5<permission>\"},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/thejail <commandname>\"}}"
+  command_save_help: "{\"text\":\"<commandname>\",\"color\":\"green\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail <commandname>\n&eDescription&2:\n  &fSaves the the global, world, and jail\n&f configurations, as well as languages.\n&ePermission&2:\n  &5<permission>\"},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/thejail <commandname>\"}}"
+  command_version_help: "{\"text\":\"<commandname>\",\"color\":\"green\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail <commandname>\n&eDescription&2:\n  &fShows version information about this plugin.\n&ePermission&2:\n  &5<permission>\"},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/thejail <commandname>\"}}"
+  command_settings_help: "{\"text\":\"<commandname>\",\"color\":\"green\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail <commandname>\n&eDescription&2:\n  &fShows a chat menu to configure plugin settings.\n&ePermission&2:\n  &5<permission>\"},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/thejail <commandname>\"}}"
+  command_missionitem_help: "{\"text\":\"<commandname>\",\"color\":\"green\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail <commandname>\n&eDescription&2:\n  &fDefines the items that the game will issue to players\n&ePermission&2:\n  &5<permission>\"},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/thejail <commandname>\"}}"
+  command_onjoinaction_help: "{\"text\":\"<commandname>\",\"color\":\"green\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail <commandname>\n&eDescription&2:\n  &fSets the actions to perform when when players join the server\n&eVariables&2:\n&7 ClearInventory&f - Removes all items from the players inventory.\n&7  Teleport&f - Teleports player to a set location\n&ePermission&2:\n  &5<permission>\"},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/thejail <commandname>\"}}"
+  command_onjoincommand_help: "{\"text\":\"<commandname>\",\"color\":\"green\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail <commandname>\n&eDescription&2:\n  &fAllows configuration of commands to run upon joining\n&ePermission&2:\n  &5<permission>\"},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/thejail <commandname>\"}}"
+  command_onfailaction_help: "{\"text\":\"<commandname>\",\"color\":\"green\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail <commandname>\n&eDescription&2:\n  &fSets the actions to perform when when players fail their task\n&eVariables&2:\n&7 ClearInventory&f - Removes all items from the players inventory.\n&7  Teleport&f - Teleports player to a set location\n&7  Send&f - Sends player to a set server\n&ePermission&2:\n  &5<permission>\"},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/thejail <commandname>\"}}"
+  command_onfailcommand_help: "{\"text\":\"<commandname>\",\"color\":\"green\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail <commandname>\n&eDescription&2:\n  &fAllows configuration of commands to run upon joining\n&ePermission&2:\n  &5<permission>\"},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/thejail <commandname>\"}}"
+  command_failtrigger_help: "{\"text\":\"<commandname>\",\"color\":\"green\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail <commandname>\n&eDescription&2:\n  &fSets what events will trigger a mission failure\n&eVariables&2:\n&7 Arrested&f - Upon being arrested.\n&7 Bounty #&f - When the players bounty is over a specified amount.\n&7 Death&f - Upon the player dying.\n&7 Escape&f - Upon the player escaping a jail.\n&7 Murder&f - When the player murders something that is not a target.\n&7 Wanted&f - When the player becomes wanted.\n&ePermission&2:\n  &5<permission>\"},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/thejail <commandname>\"}}"
+  command_oncompleteaction_help: "{\"text\":\"<commandname>\",\"color\":\"green\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail <commandname>\n&eDescription&2:\n  &fSets the actions to perform when the player completes their task\n&ePermission&2:\n  &5<permission>\"},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/thejail <commandname>\"}}"
+  command_oncompletecommand_help: "{\"text\":\"<commandname>\",\"color\":\"green\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail <commandname>\n&eDescription&2:\n  &fCommands to run upon the player completing the task\n&ePermission&2:\n  &5<permission>\"},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/thejail <commandname>\"}}"
+  command_penalty_help: "{\"text\":\"<commandname>\",\"color\":\"green\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail <commandname>\n&eDescription&2:\n  &fConfigure settings for penalties\n&eVariables&2:\n&7 Escape&f - Penalty for escaping.\n&7  Wanted&f - Penalty for becoming wanted\n&7  jailed&f - Penalty for getting arrested\n&ePermission&2:\n  &5<permission>\"},\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/thejail <commandname>\"}}"
+
+console_messages:
+  plugin_ondisable: TheJail Shutting down
+  plugin_savingdata: Saving all player data to the database
+  plugin_savingerror: Failed saving the player data
+  plugin_error: Error> <message>
+  plugin_debug: Debug> <message>
+  plugin_langloaded: Language Loaded (<message>)
+  plugin_version: MC Version found <message>
+  plugin_unknownversion: Unknown minecraft version <message>. Check for updates (https://www.spigotmc.org/resources/npc-police.9553/)
+  plugin_invalidpermplugin: Your permissions manager does not support groups, group based permissions have been disabled.
+  configs_reloaded: Reloaded configs
+  forced_world_notfound: You have a setting configured to move users to the world <message>, but it does not exist.
+  command_noconsole: This command cannot be used via the console.
+  citizens_notfound: Citizens not found, You need to have citizens for this plugin to work.
+  citizens_found: Citizens (<message>) found, NPC trait enabled.
+  placeholder_notfound: PlaceHolderAPI not found, placeholder support disabled
+  placeholder_found: PlaceHolderAPI V(<message>) found, placeholders now supported
+  holographicdisplays_notfound: HolographicDisplays not found, holographic support disabled
+  holographicdisplays_found: PlaceHolderAPI V(<message>) found, holograms supported
+
+result_messages:
+  true_text: true
+  false_text: false
+  notset: Not configured
+  nolocationset: No location set
+  nogroup: No group configured
+  kicktype_notset: Not configured
+  kicktype_arrest_server: OnArrest/Server
+  kicktype_arrest_world: OnArrest/World
+  kicktype_change_server: OnChange/Server
+  kicktype_change_world: OnChange/World
+  until: Until
+  hours: Hours
+  minutes: Minutes
+  seconds: Seconds
+
+player_messages:
+  join: "[{\"text\":\"&6You need to locate &e{0}&6 and he will provide more information!\",\"color\":\"gold\"}]"
+  tasks:
+    beat_up: 'Beat up <targetnpc.name>'
+    get_item: 'Get item from <targetnpc.name>'
+    give_item: 'Give item to <targetnpc.name>'
+    kill_npc: 'Murder <targetnpc.name>'
+    return: 'See <npc.name>'
+
+  mission:
+    beatup: "[{\"text\":\"&2[&e<npc.name>&2] &6You need to locate &e<targetnpc.name>&6 and beat them up! Do not kill them or I will make sure you are in jail forever!\",\"color\":\"gold\"}]"
+    export: "[{\"text\":\"&2[&e<npc.name>&2] &6You need to locate &e<targetnpc.name>&6 and get an &f<player.item>&6 from them and return it to me! You cannot be a criminal when you come to me..\",\"color\":\"gold\"}]"
+    import: "[{\"text\":\"&2[&e<npc.name>&2] &6You need to locate &e<targetnpc.name>&6 and give them this &f<player.item>&6 from me! Do not let the guards see you around them!\",\"color\":\"gold\"}]"
+    murder: "[{\"text\":\"&2[&e<npc.name>&2] &6You need to locate &e<targetnpc.name>&6 and kill them! You cannot be wanted or jailed when you do it, or else we will be suspected!\",\"color\":\"gold\"}]"
+
+  failed:
+    murder: "[{\"text\":\"&2[&e<npc.name>&2] &6You are wanted for a murder now! I cannot have you associated with me!\",\"color\":\"gold\"}]"
+    death: "[{\"text\":\"&2[&e<npc.name>&2] &6You died and are unable to complete your mission!\",\"color\":\"gold\"}]"
+    arrested: "[{\"text\":\"&2[&e<npc.name>&2] &6You have been arrested and are no longer able to complete your task!\",\"color\":\"gold\"}]"
+    wanted: "[{\"text\":\"&2[&e<npc.name>&2] &6You attracted to much attention to your self. We cannot continue with your mission!\",\"color\":\"gold\"}]"
+    escaped: "[{\"text\":\"&2[&e<npc.name>&2] &6You have escaped from the jail and have to much attention on you. We cannot continue with your mission!\",\"color\":\"gold\"}]"
+    bounty: "[{\"text\":\"&2[&e<npc.name>&2] &6Your bounty level has become to high to continue your task!\",\"color\":\"gold\"}]"
+
+  return:
+    wanted: "[{\"text\":\"&2[&e<npc.name>&2] &6Get lost, they are looking for you and all eyes are on us. Find me when you are not being hunted by the guards!\",\"color\":\"gold\"}]"
+    finished: "[{\"text\":\"&2[&e<npc.name>&2] &6You earned a score of &e<player.scorefmt>\",\"color\":\"gold\"}]"
+    wrongitem: "[{\"text\":\"&2[&e<npc.name>&2] &6What trickery are you trying to pull over? This is not what you were to bring out of the jail!\",\"color\":\"gold\"}]"
+
+  target:
+    beatup: "[{\"text\":\"&2[&e<npc.name>&2] &6Who are you and what do you want, leave me alone!\",\"color\":\"gold\"}]"
+    export: "[{\"text\":\"&2[&e<npc.name>&2] &6Here you go, take it to randy!\",\"color\":\"gold\"}]"
+    import: "[{\"text\":\"&2[&e<npc.name>&2] &6Thanks, now get out of here before they catch on to us!\",\"color\":\"gold\"}]"
+    murder: "[{\"text\":\"&2[&e<npc.name>&2] &6Leave me alone, pester someone else in here.\",\"color\":\"gold\"}]"
+    wrongitem: "[{\"text\":\"&2[&e<npc.name>&2] &6What trickery are you trying to pull over? This is not what I asked for!\",\"color\":\"gold\"}]"
+
+  items:
+    mission_item: '&eMission Item &2[&f<player.item>&2]'
+
+  damage:
+    hasstatus: "[{\"text\":\"&6You are currently wanted by the Guards. This will accomplish nothing.\",\"color\":\"gold\"}]"
+    beatup: "[{\"text\":\"&2[&e<targetnpc.name>&2] &6STOP PLEASE STOP! I got the message, tell them I will keep my mouth shut!\",\"color\":\"gold\"}]"
+    wrongmurder: "[{\"text\":\"&6You should not have killed him! I have let the guards know you committed murder, enjoy rotting in jail!\",\"color\":\"gold\"}]"
+    wantedmurder: "[{\"text\":\"&2[&e<targetnpc.name>&2] &6Tell my mother I loved her! Why did you do this to meee-e-e **GASP**\",\"color\":\"gold\"}]"
+    murder: "[{\"text\":\"&2[&e<targetnpc.name>&2] &6AHHHH! I shouldn''t have snitched!\",\"color\":\"gold\"}]"
+
+  penalty:
+    escaped: "[{\"text\":\"&2[&e<npc.name>&2] &6You cannot go near &e<target.name>&6, they will not help you. However, I think some credit is due.\",\"color\":\"gold\"}]"
+    jailed: "[{\"text\":\"&2[&e<npc.name>&2] &6To much attention, you must not be noticed. This will affect your score.\",\"color\":\"gold\"}]"
+    wanted: "[{\"text\":\"&2[&e<npc.name>&2] &6The guards are now looking for you, this will affect your score!\",\"color\":\"gold\"}]"
+    spotted: "[{\"text\":\"&2[&e<npc.name>&2] &6You should be more careful, you have been spotted you!\",\"color\":\"gold\"}]"
+
+placeholder_strings:
+  beatup: 'Beat up {0}'
+  export: 'Get item from {0}'
+  import: 'Give item to {0}'
+  murder: 'Murder {0}'
+  return: 'See {0}'
+
+settings_menu:
+- "[{\"text\":\"--\",\"color\":\"dark_aqua\"},{\"text\":\"[\",\"color\":\"white\"},{\"text\":\"The Jail Settings\",\"color\":\"yellow\"},{\"text\":\"]\",\"color\":\"white\"},{\"text\":\"------------------------------\",\"color\":\"dark_aqua\"}]"
+- "[{\"text\":\"\",\"color\":\"dark_aqua\"},{\"text\":\"OnJoin \",\"color\":\"green\"}"
+- ",{\"text\":\"      [\",\"color\":\"white\"},{\"text\":\"✎\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/thejail onjoincommand\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail onjoincommand \n&eDescription&2:\n  &fOpens a GUI to manage the commands to run upon\n&f players joining.\n&ePermission&2:\n  &5thejail.settings.onjoin\"},\"color\":\"yellow\"},{\"text\":\"] \",\"color\":\"white\"},{\"text\":\"commands \",\"color\":\"aqua\"}"
+- ",{\"text\":\"[\",\"color\":\"white\"},{\"text\":\"<setting.onjoin.teleport>\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/thejail onjoinaction TELEPORT\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail onjoinaction teleport \n&eSetting&2:\n  &f<setting.onjoin.teleport.value>\n&eDescription&2:\n  &fToggle if you will teleport a player upon joining\n&f  The location you are standing in will be set.\n&ePermission&2:\n  &5thejail.settings.onjoin\"},\"color\":\"yellow\"},{\"text\":\"] \",\"color\":\"white\"},{\"text\":\"Teleport \",\"color\":\"aqua\"}"
+- ",{\"text\":\"[\",\"color\":\"white\"},{\"text\":\"<setting.onjoin.clearinventory>\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/thejail onjoinaction CLEARINVENTORY\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail onjoinaction clearinventory \n&eDescription&2:\n  &fToggle if the plugin clears a players inventory on join.\n&ePermission&2:\n  &5thejail.settings.onjoin\"},\"color\":\"yellow\"},{\"text\":\"] \",\"color\":\"white\"},{\"text\":\"Clear Inv \",\"color\":\"aqua\"}"
+- ",{\"text\":\" \",\"color\":\"dark_aqua\"}]"
+- "[{\"text\":\"\",\"color\":\"dark_aqua\"},{\"text\":\"OnFail \",\"color\":\"green\"}"
+- ",{\"text\":\"       [\",\"color\":\"white\"},{\"text\":\"✎\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/thejail onfailcommand\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail failcommand \n&eDescription&2:\n  &fOpens a GUI to manage the commands to run upon\n&f players failing.\n&ePermission&2:\n  &5thejail.settings.onfail\"},\"color\":\"yellow\"},{\"text\":\"] \",\"color\":\"white\"},{\"text\":\"commands \",\"color\":\"aqua\"}"
+- ",{\"text\":\"[\",\"color\":\"white\"},{\"text\":\"<setting.onfail.teleport>\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/thejail onfailaction teleport\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail failaction teleport \n&eSetting&2:\n  &f<setting.onfail.teleport.value>\n&eDescription&2:\n  &fToggle if you will teleport a player upon joining\n&f  The location you are standing in will be set.\n&ePermission&2:\n  &5thejail.settings.onfail\"},\"color\":\"yellow\"},{\"text\":\"] \",\"color\":\"white\"},{\"text\":\"Teleport \",\"color\":\"aqua\"}"
+- ",{\"text\":\"[\",\"color\":\"white\"},{\"text\":\"<setting.onfail.send>\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"/thejail onfailaction send \"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail failaction send \n&eSetting&2:\n  &f<setting.onfail.send.value> \n&eDescription&2:\n  &fSet the game to send players to another\n&f server upon failing.\n&ePermission&2:\n  &5thejail.settings.onfail\"},\"color\":\"yellow\"},{\"text\":\"] \",\"color\":\"white\"},{\"text\":\"Send \",\"color\":\"aqua\"}"
+- ",{\"text\":\"[\",\"color\":\"white\"},{\"text\":\"<setting.onfail.clearinventory>\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/thejail onfailaction clearinventory\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail failaction clearinventory \n&eDescription&2:\n  &fToggle if the plugin clears a players inventory on failing\n&ePermission&2:\n  &5thejail.settings.onfail\"},\"color\":\"yellow\"},{\"text\":\"] \",\"color\":\"white\"},{\"text\":\"Clear Inv \",\"color\":\"aqua\"}"
+- ",{\"text\":\" \",\"color\":\"dark_aqua\"}]"
+- "[{\"text\":\"\",\"color\":\"dark_aqua\"},{\"text\":\"OnComplete \",\"color\":\"green\"}"
+- ",{\"text\":\"[\",\"color\":\"white\"},{\"text\":\"✎\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/thejail oncompletecommand\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail oncompletecommand \n&eDescription&2:\n  &fOpens a GUI to manage the commands to run upon\n&f players completion.\n&ePermission&2:\n  &thejail.settings.oncomplete\"},\"color\":\"yellow\"},{\"text\":\"] \",\"color\":\"white\"},{\"text\":\"commands \",\"color\":\"aqua\"}"
+- ",{\"text\":\"[\",\"color\":\"white\"},{\"text\":\"<setting.oncomplete.teleport>\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/thejail oncompleteaction teleport \"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail oncompleteaction teleport \n\n&eSetting&2:\n  &f<setting.oncomplete.teleport.value>\n&eDescription&2:\n  &fToggle if the plugin clears a players inventory on completion\n&f  The location you are standing in will be set.\n&ePermission&2:\n  &thejail.settings.oncomplete\"},\"color\":\"yellow\"},{\"text\":\"] \",\"color\":\"white\"},{\"text\":\"teleport \",\"color\":\"aqua\"}"
+- ",{\"text\":\"[\",\"color\":\"white\"},{\"text\":\"<setting.oncomplete.send>\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"/thejail oncompleteaction send \"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail oncompleteaction send \n&eSetting&2:  &f<setting.oncomplete.send.value>\n&eDescription&2:\n  &fSet the game to send players to another\n&f server upon completing the mission.\n&ePermission&2:\n  &thejail.settings.oncomplete\"},\"color\":\"yellow\"},{\"text\":\"] \",\"color\":\"white\"},{\"text\":\"Send \",\"color\":\"aqua\"}"
+- ",{\"text\":\"[\",\"color\":\"white\"},{\"text\":\"<setting.oncomplete.reset>\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/thejail oncompleteaction reset\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail oncompleteaction reset \n&eDescription&2:\n  &fReset the game upon completion\n&ePermission&2:\n  &thejail.settings.oncomplete\"},\"color\":\"yellow\"},{\"text\":\"] \",\"color\":\"white\"},{\"text\":\"Reset \",\"color\":\"aqua\"}"
+- ",{\"text\":\" \",\"color\":\"dark_aqua\"}]"
+- "[{\"text\":\"--\",\"color\":\"dark_aqua\"},{\"text\":\"[\",\"color\":\"white\"},{\"text\":\"Triggers\",\"color\":\"yellow\"},{\"text\":\"]\",\"color\":\"white\"},{\"text\":\"-------------------------------------\",\"color\":\"dark_aqua\"}]"
+- "[{\"text\":\"\",\"color\":\"dark_aqua\"},{\"text\":\" \",\"color\":\"green\"}"
+- ",{\"text\":\"[\",\"color\":\"white\"},{\"text\":\"<setting.triggers.death>\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/thejail failtrigger death\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail failtrigger death \n&eDescription&2:\n  &fToggle if a player fails on death\n&ePermission&2:\n  &5thejail.settings.failtrigger\"},\"color\":\"yellow\"},{\"text\":\"] \",\"color\":\"white\"},{\"text\":\"Death \",\"color\":\"aqua\"}"
+- ",{\"text\":\"[\",\"color\":\"white\"},{\"text\":\"<setting.triggers.arrested>\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/thejail failtrigger arrested\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail failtrigger arrested \n&eDescription&2:\n  &fToggle if a player fails when arrested\n&ePermission&2:\n  &5thejail.settings.failtrigger\"},\"color\":\"yellow\"},{\"text\":\"] \",\"color\":\"white\"},{\"text\":\"Arrested \",\"color\":\"aqua\"}"
+- ",{\"text\":\"[\",\"color\":\"white\"},{\"text\":\"<setting.triggers.wanted>\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/thejail failtrigger wanted\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail failtrigger wanted \n&eDescription&2:\n  &fToggle if a player fails when wanted\n&ePermission&2:\n  &5thejail.settings.failtrigger\"},\"color\":\"yellow\"},{\"text\":\"] \",\"color\":\"white\"},{\"text\":\"Wanted \",\"color\":\"aqua\"}]"
+- "[{\"text\":\"[\",\"color\":\"white\"},{\"text\":\"<setting.triggers.escaped>\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/thejail failtrigger escaped\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail failtrigger escaped \n&eDescription&2:\n  &fToggle if a player fails upon escaping\n&ePermission&2:\n  &5thejail.settings.failtrigger\"},\"color\":\"yellow\"},{\"text\":\"] \",\"color\":\"white\"},{\"text\":\"Escaped \",\"color\":\"aqua\"}"
+- ",{\"text\":\"[\",\"color\":\"white\"},{\"text\":\"<setting.triggers.murder>\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/thejail failtrigger murder\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail failtrigger murder \n&eDescription&2:\n  &fToggle if a player fails for murder\n&ePermission&2:\n  &5thejail.settings.failtrigger\"},\"color\":\"yellow\"},{\"text\":\"] \",\"color\":\"white\"},{\"text\":\"Murder \",\"color\":\"aqua\"}"
+- ",{\"text\":\"[\",\"color\":\"white\"},{\"text\":\"<setting.triggers.bounty>\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"/thejail failtrigger bounty \"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail failtrigger bounty \n&eSetting&2:\n  &f<setting.triggers.bounty.value> \n&eDescription&2:\n  &fToggle if a player fails for bounty\n&ePermission&2:\n  &5thejail.settings.failtrigger\"},\"color\":\"yellow\"},{\"text\":\"] \",\"color\":\"white\"},{\"text\":\"Bounty \",\"color\":\"aqua\"}"
+- ",{\"text\":\" \",\"color\":\"dark_aqua\"}]"
+- "[{\"text\":\"--\",\"color\":\"dark_aqua\"},{\"text\":\"[\",\"color\":\"white\"},{\"text\":\"Penalties\",\"color\":\"yellow\"},{\"text\":\"]\",\"color\":\"white\"},{\"text\":\"-------------------------------------\",\"color\":\"dark_aqua\"}]"
+- "[{\"text\":\"\",\"color\":\"dark_aqua\"},{\"text\":\" \",\"color\":\"green\"}"
+- ",{\"text\":\"[\",\"color\":\"white\"},{\"text\":\"<setting.penalty.escaped>\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"/thejail penalty escape \"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail penalty escape #\n&eDescription&2:\n  &fToggle if a player fails on death\n&ePermission&2:\n  &5thejail.penalty\"},\"color\":\"yellow\"},{\"text\":\"] \",\"color\":\"white\"},{\"text\":\"Escape \",\"color\":\"aqua\"}"
+- ",{\"text\":\"[\",\"color\":\"white\"},{\"text\":\"<setting.penalty.wanted>\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"/thejail penalty wanted \"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail penalty wanted #\n&eDescription&2:\n  &fToggle if a player fails when arrested\n&ePermission&2:\n  &5thejail.penalty\"},\"color\":\"yellow\"},{\"text\":\"] \",\"color\":\"white\"},{\"text\":\"Wanted \",\"color\":\"aqua\"}"
+- ",{\"text\":\"[\",\"color\":\"white\"},{\"text\":\"<setting.penalty.jailed>\",\"clickEvent\":{\"action\":\"suggest_command\",\"value\":\"/thejail penalty jailed \"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"&eUsage&2:\n  &f/thejail penalty jailed #\n&eDescription&2:\n  &fToggle if a player fails when wanted\n&ePermission&2:\n  &5thejail.penalty\"},\"color\":\"yellow\"},{\"text\":\"] \",\"color\":\"white\"},{\"text\":\"Jailed \",\"color\":\"aqua\"}"
+- ",{\"text\":\" \",\"color\":\"dark_aqua\"}]"

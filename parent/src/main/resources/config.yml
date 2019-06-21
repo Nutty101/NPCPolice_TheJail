@@ -1,0 +1,18 @@
+#################################################
+# General settings for the plugin
+#################################################
+# Default language to use for the plugin.  en-default is the file that is wrote out by the plugin each startup. You can however copy that file to a new one aka sp-mx for spanish-mexico and then edit that. Put sp-mx after language and it will use that language for the plugin.
+language: en_def
+
+##########################################################
+# Database connection information  (DBType = sqlite,mysql)
+##########################################################
+database:
+  type: sqlite
+  name: somedatabasename
+  port: 3306
+  host: 127.0.0.1
+  login: login
+  password: password
+  table_prefix: npcjail
+

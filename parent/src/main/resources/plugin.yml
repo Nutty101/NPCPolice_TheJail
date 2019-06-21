@@ -1,0 +1,40 @@
+name: TheJailQuest
+main: net.livecar.nuttyworks.thejail.TheJail_Plugin
+version: 2.0.0
+author: Sir_Nutty@Spigot
+website: https://www.spigotmc.org/resources/npc-police.9553/
+api-version: 1.13
+loadafter: [NPC_Police,Citizens]
+commands:
+  thejail:
+    description: Can you avoid being caught?
+    aliases: [nptj]
+    usage:  |
+      /thejail help
+permissions:
+  thejail.admin.reload:
+    default: op
+  thejail.admin.version:
+    default: op
+  thejail.admin.save:
+    default: op
+  thejail.admin.setup:
+    default: op
+  thejail.admin.showquester:
+    default: op
+  thejail.admin.showtargets:
+    default: op
+  thejail.settings:
+    default: op
+  thejail.settings.missionitems:
+    default: op
+  thejail.settings.onjoin:
+    default: op
+  thejail.settings.onfinish:
+    default: op
+  thejail.settings.oncomplete:
+    default: op
+  thejail.settings.failtrigger:
+    default: op
+  thejail.settings.penalty:
+    default: op
