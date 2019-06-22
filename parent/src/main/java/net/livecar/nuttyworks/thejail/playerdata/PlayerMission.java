@@ -106,11 +106,11 @@ public class PlayerMission
         String response = "";
 
         if (timeHours > 0)
-            response = String.valueOf(timeHours) + " " + pluginRef.getMessageManager.getResultMessage("result_messages.hours") + " ";
+            response = String.valueOf(timeHours) + " " + pluginRef.getMessageManager.getResultMessage("result_messages.hours")[0] + " ";
         if (timeMinutes > 0)
-            response = response + String.valueOf(timeMinutes) + " " + pluginRef.getMessageManager.getResultMessage("result_messages.minutes") + " ";
+            response = response + String.valueOf(timeMinutes) + " " + pluginRef.getMessageManager.getResultMessage("result_messages.minutes")[0] + " ";
         if (timeSeconds > 0)
-            response = response + String.valueOf(timeSeconds) + " " + pluginRef.getMessageManager.getResultMessage("result_messages.seconds") + " ";
+            response = response + String.valueOf(timeSeconds) + " " + pluginRef.getMessageManager.getResultMessage("result_messages.seconds")[0] + " ";
 
         return response.trim();
     }
@@ -233,7 +233,7 @@ public class PlayerMission
 				player.getInventory().addItem(new ItemStack(stack));
 				break;
 			case KILL:
-				pluginRef.getMessageManager.sendMessage(player, "player_messages.mission.import", npc, target);
+				pluginRef.getMessageManager.sendMessage(player, "player_messages.mission.murder", npc, target);
 				break;
 			case RETURN:
 				break;

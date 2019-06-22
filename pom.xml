@@ -11,9 +11,9 @@
 
     <modules>
         <module>API</module>
+        <module>parent</module>
         <module>V1_12_R1</module>
         <module>V1_13_R1</module>
-        <module>parent</module>
     </modules>
 
     <name>NPCPolice_TheJail</name>
